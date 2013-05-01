@@ -13,22 +13,22 @@
 		<div id="content">
 			<h1>The PolyStatic Programming Language</h1>
 
-			<h2>What makes PolyStatic different?</h2>
+			<h2><a name="diff" />What makes PolyStatic different?</h2>
 			<p>PolyStatic is targeted at static typesafety and runtime modularity. The goal is to have a type system similar to those of C++ and Java, but runtime compatibility like that of Python. The intended use is programming game logic as a scripting language.</p>
 
-			<h2>How do I learn to write PolyStatic code?</h2>
+			<h2><a name="learn" />How do I learn to write PolyStatic code?</h2>
 			<p>The documentation isn't ready yet because the language is still very new. There are examples, though.</p>
 
-			<h2>What's the Hello World program?</h2>
+			<h2><a name="helloworld" />What's the Hello World program?</h2>
 			<p>For there to be a Hello World program, there has to be a way to output information somwhere. PolyStatic is meant to be used by other code (e.g. a game), so it depends on the caling code to provide e.g. a debugging callback function. Since there's no standardized output, <b>there's no Hello World program</b>. What do you want from me? There can't be one for every language!</p>
 
-            <h2>What are the various file extensions?</h2>
-            <p>Scripts that are meant to be interpreted from text are called <i>liquids</i>, nad have a file extension of <tt>psliquid</tt>. Compiled PolyStatic code (e.g. a libraries) are called <i>solids</i>, and have a file extension of <tt>pssolid</tt>. By now you may be wondering what <i>gasses</i> are - files with extension <tt>psgas</tt> represent interface files, and are generally provided as APIs for host programs (e.g. callbacks) or libraries written in other languages.</p>
+			<h2><a name="files" />What are the various file extensions?</h2>
+			<p>Scripts that are meant to be interpreted from text are called <i>liquids</i>, nad have a file extension of <tt>psliquid</tt>. Compiled PolyStatic code (e.g. a libraries) are called <i>solids</i>, and have a file extension of <tt>pssolid</tt>. By now you may be wondering what <i>gasses</i> are - files with extension <tt>psgas</tt> represent interface files, and are generally provided as APIs for host programs (e.g. callbacks) or libraries written in other languages.</p>
 
-            <h2>How do I compile/run it?</h2>
+			<h2><a name="build" />How do I compile/run it?</h2>
 			<p>You have to use the liquid interpreter for now; more options will be available later (such as building to solids or running liquids live from other expplications). In the future, you will be able to run <tt>solidify</tt> to compile your liquids into solids.</p>
 
-			<h2>What's all this crazy terminology?</h2>
+			<h2><a name="terms" />What's all this crazy terminology?</h2>
 			<p>
 				PolyStatic is made of Matter:
 				<br /><b>Solid</b>: Compiled PolyStatic code, aka a library. (Ruby calls them Gems)
