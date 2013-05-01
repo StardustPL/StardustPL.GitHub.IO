@@ -27,6 +27,21 @@
 
             <h2>How do I compile/run it?</h2>
 			<p>You have to use the liquid interpreter for now; more options will be available later (such as building to solids or running liquids live from other expplications). In the future, you will be able to run <tt>solidify</tt> to compile your liquids into solids.</p>
+
+			<h2>What's all this crazy terminology?</h2>
+			<p>
+				PolyStatic is made of Matter:
+				<br /><b>Solid</b>: Compiled PolyStatic code, aka a library. (Ruby calls them Gems)
+				<br /><b>Liquid</b>: Source PolyStatic code in raw form.
+				<br /><b>Gas</b>: Declarations-only file, generally used like C++ headers as a way to interface with the host/calling code via callbacks.
+				<br /><b>Space</b>: Like C++ namespaces and scopes, Java packages and scopes, etc. except unified into one term.
+				<br /><b>Solidifier</b>: Compiler; converts liquids into solids.
+				<br /><b>Melting</b>: Decompiling (not recommended).
+				<br /><b>Liquifier</b>: Something that takes liquids and solids, merges them into one environment, and executes particular functions at its leisure. For example, an interpreter. This is often called the "host".
+				<br /><b>Liquification</b>: Executing code with a liquifier.
+				<br /><b>Condensation</b>: Porting code from other languages to PolyStatic or moving host implementation to PolyStatic implementation.
+				<br /><b>Evaporation</b>: Converting PolyStatic code to another langauge (generally the native language of the host).
+			</p>
 		</div>
 
 		<div id="copyright">
