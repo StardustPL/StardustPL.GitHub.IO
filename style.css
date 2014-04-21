@@ -6,9 +6,12 @@ body
 	background-color: #FFDDDD;
 	font-family: sans-serif;
 	font-size: 0.9em;
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-h1, h2, h3
+h1, h2, h3, h4, h5, h6
 {
 	font-family: sans-serif;
 	padding-bottom: 0.2em;
@@ -19,13 +22,6 @@ h1, h2, h3
 h1
 {
 	border-bottom: 1px dashed #AAA;
-}
-
-div#copyright
-{
-	text-align: center;
-	font-size: small;
-	clear: both;
 }
 
 a
@@ -41,13 +37,6 @@ a:hover
 a:visit
 {
 	color: #FF4321;
-}
-
-div#content
-{
-	width: 750px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 ul

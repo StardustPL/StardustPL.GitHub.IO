@@ -1,53 +1,28 @@
-<!DOCTYPE html PUBLIC
-"-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-		<meta name="description" content="Programming language" />
-		<meta http-equiv="content-language" content="en"/>
-		<title>PolyStatic - statically safe and dynamically modular</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<meta charset="UTF-8" />
+		<title>Cosmos lang</title>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div id="content">
-			<h1>The PolyStatic Programming Language</h1>
+		<h1>The Cosmos Programming Language</h1>
 
-			<h2><a name="diff"></a>What makes PolyStatic different?</h2>
-			<p>PolyStatic is targeted at static typesafety and runtime modularity. The goal is to have a type system similar to those of C++ and Java, but runtime compatibility like that of Python. The intended use is programming game logic as a scripting language.</p>
+		<h2>Creating the Cosmos</h2>
+		<p>Cosmos is a language born out of frustration with other languages. After falling into the black holes of other languages for years, Cosmos was finally born.</p>
 
-			<h2><a name="learn"></a>How do I learn to write PolyStatic code?</h2>
-			<p>The documentation isn't ready yet because the language is still very new. There are examples, though.</p>
-
-			<h2><a name="helloworld"></a>What's the Hello World program?</h2>
-			<p>For there to be a Hello World program, there has to be a way to output information somwhere. PolyStatic is meant to be used by other code (e.g. a game), so it depends on the caling code to provide e.g. a debugging callback function. Since there's no standardized output, <b>there's no Hello World program</b>. What do you want from me? There can't be one for every language!</p>
-
-			<h2><a name="files"></a>What are the various file extensions?</h2>
-			<p>Scripts that are meant to be interpreted from text are called <i>liquids</i>, nad have a file extension of <tt>psliquid</tt>. Compiled PolyStatic code (e.g. a libraries) are called <i>solids</i>, and have a file extension of <tt>pssolid</tt>. By now you may be wondering what <i>gasses</i> are - files with extension <tt>psgas</tt> represent interface files, and are generally provided as APIs for host programs (e.g. callbacks) or libraries written in other languages. Basically, anything that matches <b>*.ps*</b> is a PolyStatic-related file.</p>
-
-			<h2><a name="build"></a>How do I compile/run it?</h2>
-			<p>You have to use the liquid interpreter for now; more options will be available later (such as building to solids or running liquids live from other expplications). In the future, you will be able to run <tt>solidify</tt> to compile your liquids into solids.</p>
-
-			<h2><a name="terms"></a>What's all this crazy terminology?</h2>
-			<p>PolyStatic is made of Matter:</p>
-			<ul>
-				<li><b>Solid</b>: Compiled PolyStatic code, aka a library. (Ruby calls them Gems)</li>
-				<li><b>Liquid</b>: Source PolyStatic code in raw form.</li>
-				<li><b>Gas</b>: Declarations-only file, generally used like C++ headers as a way to interface with the host/calling code via callbacks.</li>
-				<li><b>Fluid</b>: Fluids are liquids and gasses, which are generally the combined sources that solidified.</li>
-				<li><b>Space</b>: Like C++ namespaces and scopes, Java packages and scopes, etc. except unified into one term.</li>
-				<li><b>Solidifier</b>: Compiler; converts liquids into solids.</li>
-				<li><b>Melting</b>: Extracting reflective type & name information from solids to get an interface.</li>
-				<li><b>Liquifier</b>: Something that takes liquids and solids, merges them into one environment, and executes particular functions at its leisure. For example, an interpreter. This is often called the "host".</li>
-				<li><b>Liquification</b>: Executing code with a liquifier.</li>
-				<li><b>Condensation</b>: Porting code from other languages to PolyStatic or moving host implementation to PolyStatic implementation.</li>
-				<li><b>Evaporation</b>: Converting PolyStatic code to another langauge (generally the native language of the host).</li>
-			</ul>
-		</div>
-
-		<div id="copyright">
-			<p style="font-size: 8pt;">Copyright &copy; 2013 LB-Stuff<br />
-			<a target="_blank" href="https://github.com/LB--/PolyStatic/tree/gh-pages/">This page is hosted by GitHub Pages</a>
-		</div>
+		<h2>Terminology</h2>
+		<p>The Cosmos is made of Matter:</p>
+		<ul>
+			<li><strong>Solid</strong>: Compiled code, may be used as a library or as the entry point of execution. The file extenson is .csolid</li>
+			<li><strong>Liquid</strong>: Source code in raw form. The file extension is .cliquid</li>
+			<li><strong>Gas</strong>: Declarations-only file, similar to C++ headers. The file extension is .cgas</li>
+			<li><strong>Fluid</strong>: Fluids are liquids and gasses, which which make up a program.</li>
+			<li><strong>Solidification</strong>: Compilation of liquids into solids</li>
+			<li><strong>Sublimation</strong>: Creating a gas from a solid.</li>
+			<li><strong>Liquefy</strong>: To execute a program.</li>
+			<li><strong>Condensation</strong>: Implementing a gas in a liquid.</li>
+			<li><strong>Evaporation</strong>: Creating a gas from a liquid.</li>
+		</ul>
 	</body>
 </html>
