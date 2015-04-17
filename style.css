@@ -1,50 +1,128 @@
 @charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,greek);
 
-body 
+*
 {
-	color: #000;
-	background-color: #FFDDDD;
-	font-family: sans-serif;
-	font-size: 0.9em;
-	width: 750px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+	tab-size: 4; /* seriously, who uses 8 and why? */
+}
+:root
+{
+	width: 100%;
+	height: 100%;
+	font-family: "Open Sans", sans-serif;
+	background-color: black;
+}
+body
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100%;
+	background-color: rgba(255,255,255, 0.025);
+	color: lightgreen;
+}
+header
+{
+	flex-shrink: 0;
+	display: flex;
+	z-index: 1;
+	background-image: linear-gradient(to top, transparent, black 10px);
+}
+#content
+{
+	flex-grow: 1;
+	display: flex;
+	margin: -10px 0;
+}
+nav
+{
+	order: 1;
+	flex-shrink: 0;
+	padding: 10px 0;
+	padding-left: 5px;
+	background-image: linear-gradient(to left, transparent, rgba(0,255,0, 0.025) 10px);
+}
+main
+{
+	order: 2;
+	flex-grow: 1;
+	padding: 10px 5px;
+	overflow: auto;
+}
+aside
+{
+	order: 3;
+	flex-shrink: 0;
+	padding: 10px 0;
+	padding-right: 5px;
+	background-image: linear-gradient(to right, transparent, rgba(0,255,0, 0.025) 10px);
+}
+footer
+{
+	flex-shrink: 0;
+	z-index: 1;
+	background-image: linear-gradient(to bottom, transparent, black 10px);
+	text-align: center;
+	font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6
 {
-	font-family: sans-serif;
-	padding-bottom: 0.2em;
-	margin-top: 32px;
-	margin-bottom: 0.4em;
-	color: #FF4321;
+	font-weight: 100;
 }
-h1
+a, a:link, a:visited, a:active
 {
-	border-bottom: 1px dashed #AAA;
-}
-
-a
-{
-	color: #FF0000;
 	text-decoration: none;
+	color: skyblue;
+	font-weight: inherit;
 }
 a:hover
 {
-	color: #FF1111;
 	text-decoration: underline;
 }
-a:visit
+pre, code, kbd, samp, tt, .monofont
 {
-	color: #FF4321;
+	font-family: monospace;
+	white-space: pre;
+}
+mark
+{
+	background: none;
 }
 
-ul
+header > *
 {
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin: auto;
 }
-li
+header h1
 {
-	padding-top: 7px;
+	font-weight: 900;
+}
+
+nav figure, aside figure
+{
+	display: block;
+	margin-bottom: 5px;
+	border: 1px solid darkgreen;
+	border-radius: 3px;
+	background-color: black;
+}
+nav figcaption, aside figcaption
+{
+	text-align: center;
+	font-weight: 900;
+	border-bottom: 1px dotted rgba(255,255,255, 0.25);
+}
+nav li, aside li
+{
+	margin: 0 3px;
+}
+
+main p
+{
+	margin-bottom: 10px;
 }
