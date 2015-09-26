@@ -14,12 +14,40 @@
 		</header>
 		<div id="content">
 			<main>
-				<h2>What is Stardust?</h2>
-				<p>Stardust is a language born out of frustration with other languages. After falling into the black holes of other languages for years, Stardust was finally born.</p>
-				<h2>Status: WIP.</h2>
-				<p>Currently, things are still in very early development; the syntax and goals of the language are still in flux. The GitHub issue tracker is being used like sticky notes - they'll be your best bet for understanding the direction the language is going.</p>
-				<h2>Didn't this used to be called Cosmos?</h2>
-				<p>Yes, but months after the name Cosmos had been decided on, someone else started a language also called Cosmos. Since their language was more developed, they kept the name.</p>
+				<h2>Types as First Class Citizens</h2>
+				<p>
+					C++'s template metaprogramming is incredibly powerful, but the syntax is awful.
+					In Stardust, types are objects and can be passed to and returned from functions like any other objects.
+					Where C++ has template classes, Stardust has functions that accept types and return local classes that operate on those types.
+				</p>
+				<h2>Compile-Time Code Execution</h2>
+				<p>
+					Another aspect of metaprogramming is running code at compile time.
+					Stardust syntax makes it clear whether code will run at runtime, compile time, or either time.
+					Exceptions thrown at compile time are reported during compilation and can be debugged on the spot - no messy template instantiation errors that are hard to read and confusing to debug.
+				</p>
+				<h2>No Garbage Collection</h2>
+				<p>
+					A disturbingly large number of languages have forced or default garbage collectors, even though garbage collection isn't always the best way to handle memory and memory isn't the only resource that can be leaked.
+					Stardust borrows C++'s RAII - that is, object lifetime is bound to scope, and destructors are deterministic (and therefore useful for more things than just memory).
+					Object lifetime is simple to understand and hard to get wrong.
+				</p>
+				<h2>Dynamic Module Loading</h2>
+				<p>
+					Load pre-compiled code modules at compile-time and runtime without worrying about incompatible statically linked libraries or other such nonsense.
+					Loading a module is as simple as passing in parameters to the module's compile-time code and being given a namespace in return which contains the module's public interface.
+					You can even load the same module multiples with different parameters, or even the same parameters.
+				</p>
+				<p>
+					This is inscredibly useful for games which want to support modding/plugins - each mod/plugin is just a Stardust module that gets loaded.
+					Pass your public API namespace as a parameter to the module and get its public API namespace in return, no fuss.
+				</p>
+				<h2>How do I get started?</h2>
+				<p>
+					If you're just passing by, come back in a few years.
+					There's currently no compiler and no formal specification, and it's going to be a while before any of that happens.
+					Any help and feedback is appreciated, though - language design isn't easy, and early mistakes can be permanent.
+				</p>
 			</main>
 			<nav>
 				<figure>
